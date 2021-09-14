@@ -1,0 +1,19 @@
+Funciones globales
+
+block.blockhash(blockNumber) -> devuelve el hash de un bloque dado
+block.coinbase -> devuelve la direcci'on del minero que est'a procesando el bloque actual
+block.difficulty -> devuelve la dificultad del bloque actual(el nonce es un n'umero entero, mientras m'as ceros contenga, mayor ser'a su dificultad)
+block.gaslimit -> devuelve el l'imite de gas del bloque actual
+block.number -> devuelve el n'umero del bloque actual
+block.timestamp -> devuelve el timestamp del bloque actual en segundos
+msg.data -> datos enviados en la transacci'on
+msg.gas -> devuelve el gas que queda
+msg.sender -> devuelve el remitente de llamada actual
+msg.sig -> devuelve los 4 primeros bytes d los datos enviados en la transacci'on
+msg.value -> devuelve el numero de wei enviado con la llamada
+now -> devuelve el timestamp del bloque actual
+tx.gasprice -> devuelve el precio del gas de la transacci'on
+tx.origin -> devuelve el emisor original de la transacci'on
+
+keccak256() y abi.encodedPacked()
+para calcular el hash con keccak256() hay que usar abi.encodedPacked() para pasar los argumentos a tipo bytes
