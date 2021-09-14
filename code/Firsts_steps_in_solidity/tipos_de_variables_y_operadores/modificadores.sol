@@ -14,7 +14,7 @@ contract public_private_internal{
     
     //Modificador private
     uint private mi_entero_privado = 10;
-    bool private flag =true;
+    bool private flag = true;
     
     function test(uint _k) public{
         mi_entero_privado = _k;
